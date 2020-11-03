@@ -3,38 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>mopp.space XMPP Server Status 👨🏻‍💻</title>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<meta http-equiv="refresh" content="30">
-<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
 
-<div class="page-header">
+<div class="pb-2 mt-5 mb-2 border-bottom">
 	<h1>
 		mopp.space XMPP Server Status 👨🏻‍💻
-		<span class="pull-right hidden-xs hidden-sm">
+		<span class="float-right d-none d-sm-block">
 			<a href="https://mopp.space" class="btn btn-primary" role="button">
-				<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				<i class="fas fa-home"></i>
 				Homepage
 			</a>
 		</span>
 	</h1>
 </div>
 
-<p class="hidden-md hidden-lg">
+<div class="d-sm-none d-md-none d-lg-none d-xl-none my-3">
 	<a href="https://mopp.space" class="btn btn-primary" role="button">
-		<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+		<i class="fas fa-home"></i>
 		Homepage
 	</a>
-</p>
+</div>
 
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Maintenance</h3>
+<div class="card my-3">
+	<div class="card-header">
+		<i class="fas fa-wrench"></i>
+		Maintenance
 	</div>
-	<div class="panel-body">
+	<div class="card-body">
 <h3>Scheduled maintenance for December 5th 2020</h3>
 <ul>
 <li>Upgrade Raspberry Pi</li>
@@ -44,25 +45,26 @@
 <p> Expected downtime: <5 minutes</p>
 	</div>
 </div>
-<ul class="list-group">
-	<li class="list-group-item list-group-item-success">Operational</li>
-<li class="list-group-item">
-	<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+<div class="my-3">
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-success">Operational</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
 Web server
+	<span class="badge badge-pill badge-dark"><i class="fas fa-check"></i></span>
 </li>
-<li class="list-group-item">
-	<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+<li class="list-group-item d-flex justify-content-between align-items-center">
 C2S xmpp connection
+	<span class="badge badge-pill badge-dark"><i class="fas fa-check"></i></span>
 </li>
-<li class="list-group-item">
-	<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+<li class="list-group-item d-flex justify-content-between align-items-center">
 S2S xmpp connection
+	<span class="badge badge-pill badge-dark"><i class="fas fa-check"></i></span>
 </li>
-</ul>
-<hr>
+</ul></div>
+<hr class="mt-4">
 <footer>
 	<p>Powered by <a href="https://github.com/Cyclenerd/static_status">static_status</a></p>
-	<p class="text-muted">Last checked: 2020-11-03 19:15:01 CET</p>
+	<p class="text-muted">2020-11-03 18:21:21 UTC</p>
 </footer>
 
 </div>
